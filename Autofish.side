@@ -1,0 +1,96 @@
+{
+  "id": "cefca744-0f33-41da-aa96-f614acb07825",
+  "version": "2.0",
+  "name": "Autofish",
+  "url": "https://cont.ws/",
+  "tests": [{
+    "id": "bc519495-f41d-4fff-ae05-3eed72f4d64e",
+    "name": "Autofish",
+    "commands": [{
+      "id": "c1b7f047-3251-45ac-afc2-6dd9cebc17ae",
+      "comment": "",
+      "command": "open",
+      "target": "https://cont.ws/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "692800d9-01d3-4119-9ebd-084c51dc6c6d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae64119e-8325-48df-a1d6-515a12e07dab",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.header_menu_right__addpost",
+      "targets": [
+        ["css=.header_menu_right__addpost", "css:finder"],
+        ["xpath=//div[@id='headline']/div/div[3]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://cont.ws/addpost')]", "xpath:href"],
+        ["xpath=//div[2]/div/div[3]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8161ce8e-4c0c-4626-be8d-161b0e8b3acc",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.header_menu_right__addpost",
+      "targets": [
+        ["css=.header_menu_right__addpost", "css:finder"],
+        ["xpath=//div[@id='headline']/div/div[3]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://cont.ws/addpost')]", "xpath:href"],
+        ["xpath=//div[2]/div/div[3]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90f246b0-4e49-48cd-8b4e-42aa14acbf41",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hamburger-button__label",
+      "targets": [
+        ["css=.hamburger-button__label", "css:finder"],
+        ["xpath=//div[@id='main-side-menu']/aside/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7af28c5f-6548-4aa1-acd6-4472931ec85b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sidemenu-item:nth-child(5) > .sidemenu-item__avatar",
+      "targets": [
+        ["css=.sidemenu-item:nth-child(5) > .sidemenu-item__avatar", "css:finder"],
+        ["xpath=//div[@id='main-side-menu']/aside/div[2]/div/div/div/div[2]/a[5]/img", "xpath:idRelative"],
+        ["xpath=//a[5]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b20d13d9-a724-46f4-9394-c98f0209121e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Факты Великого потопа в Москве и Петербурге",
+      "targets": [
+        ["linkText=Факты Великого потопа в Москве и Петербурге", "linkText"],
+        ["css=.new_post_prev:nth-child(2) > h3 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Факты Великого потопа в Москве и Петербурге')]", "xpath:link"],
+        ["xpath=//div[@id='posts_container']/div[2]/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/@kanalvaleriy/2572477')])[2]", "xpath:href"],
+        ["xpath=//div[2]/h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Факты Великого потопа в Москве и Петербурге')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "92baeda9-7e3a-4a9a-87aa-c56fe85961a7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bc519495-f41d-4fff-ae05-3eed72f4d64e"]
+  }],
+  "urls": ["https://cont.ws/"],
+  "plugins": []
+}

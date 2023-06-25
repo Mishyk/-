@@ -1,0 +1,56 @@
+{
+  "id": "1ae036d3-94b4-4890-b166-13ad59f87150",
+  "version": "2.0",
+  "name": "Autofakt",
+  "url": "https://idemo.bspb.ru/",
+  "tests": [{
+    "id": "bcf3dab0-62b1-4898-805b-d26ceeb0848f",
+    "name": "Bank",
+    "commands": [{
+      "id": "3b81b3d7-f089-4077-9a0a-daa0b7a4e091",
+      "comment": "",
+      "command": "open",
+      "target": "https://idemo.bspb.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e642095a-2515-466b-9546-1790fa760344",
+      "comment": "",
+      "command": "click",
+      "target": "//*[@id=\"login-button\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8464b15-19b2-4c1f-be6c-8dc3f737f03d",
+      "comment": "",
+      "command": "click",
+      "target": "//*[@id=\"login-otp-button\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c52053d1-c556-4ece-9c5f-bef1e8633d0f",
+      "comment": "",
+      "command": "click",
+      "target": "//*[@id=\"cards-overview-index\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74fd4f4c-9ffb-4426-be30-19b99ba2d6da",
+      "comment": "",
+      "command": "click",
+      "target": "//*[@id=\"logout-button\"]/span",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a45a5b50-036f-4835-8e43-c7fa05287576",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bcf3dab0-62b1-4898-805b-d26ceeb0848f"]
+  }],
+  "urls": ["https://idemo.bspb.ru/"],
+  "plugins": []
+}
